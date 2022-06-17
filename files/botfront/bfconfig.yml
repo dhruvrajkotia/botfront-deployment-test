@@ -1,0 +1,10 @@
+name: Chitchat
+namespace: bf-chitchat
+defaultLanguage: en
+nluThreshold: 0.75
+timezoneOffset: 0
+allowContextualQuestions: false
+instance:
+  name: Default Instance
+  host: 'http://rasa:5005'
+  projectId: chitchat-YsTb2tdVB

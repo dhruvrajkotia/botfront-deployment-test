@@ -1,0 +1,2194 @@
+version: "2.0"
+nlu:
+- intent: basics.no
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je t'en prie, non
+  - text: |
+      Nan
+  - text: |
+      Non merci
+  - text: |
+      nah
+  - text: |
+      no way
+  - text: |
+      non
+  - text: |
+      pas vraiment
+  - text: |
+      tu rêves
+    metadata:
+      canonical: true
+- intent: basics.request_handover
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      J'aimerais parler à un humain
+  - text: |
+      Je veux parler à un humain
+  - text: |
+      Je veux parler à une personne réelle
+  - text: |
+      agent
+  - text: |
+      besoin humain
+  - text: |
+      humain maintenant
+    metadata:
+      canonical: true
+  - text: |
+      me mettre en contact avec une personne
+- intent: basics.stop_or_cancel
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Annuler
+    metadata:
+      canonical: true
+  - text: |
+      J'ai changé d'avis
+  - text: |
+      J'aimerais arrêter ça
+  - text: |
+      Je ne veux plus faire ça
+  - text: |
+      S'il te plaît, arrête
+  - text: |
+      arrête tout
+  - text: |
+      fini
+  - text: |
+      laisse béton
+  - text: |
+      laisse tomber
+  - text: |
+      me libérer
+  - text: |
+      oublie ça
+  - text: |
+      recommencer
+  - text: |
+      redémarrer
+  - text: |
+      réinitialiser
+  - text: |
+      sortie
+  - text: |
+      stop
+  - text: |
+      éjecter
+- intent: basics.time
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Dans une minute
+  - text: |
+      Lundi
+  - text: |
+      Pâques
+  - text: |
+      aujourd'hui
+  - text: |
+      dans 2 heures
+  - text: |
+      dans environ 2 semaines
+  - text: |
+      dans environ une heure
+  - text: |
+      dans un mois
+  - text: |
+      demain
+  - text: |
+      en 15 minutes
+  - text: |
+      en août
+  - text: |
+      entre mai et août
+  - text: |
+      hier
+  - text: |
+      il y a 10 min
+    metadata:
+      canonical: true
+  - text: |
+      il y a 2 jours
+  - text: |
+      il y a un mois
+  - text: |
+      juste maintenant
+  - text: |
+      le surlendemain
+  - text: |
+      mercredi
+  - text: |
+      pour Noël
+  - text: |
+      à présent
+- intent: basics.yes
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      D'accord
+  - text: |
+      Je fais
+  - text: |
+      Ok faisons-le
+    metadata:
+      canonical: true
+  - text: |
+      Oui
+  - text: |
+      Oui bien sûr
+  - text: |
+      Oui s'il vous plaît
+  - text: |
+      absolument
+  - text: |
+      alors ok
+  - text: |
+      bien sûr
+  - text: |
+      d'accord
+  - text: |
+      ouais
+  - text: |
+      sûr
+- intent: chitchat.are_you_a_robot
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Etes-vous un robot
+  - text: |
+      es-tu juste un bot
+  - text: |
+      es-tu un chatbot
+  - text: |
+      tu es un bot
+  - text: |
+      tu es un robot
+  - text: |
+      vous êtes chatbot
+    metadata:
+      canonical: true
+  - text: |
+      êtes-vous un programme
+- intent: chitchat.are_you_happy
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Es-tu content maintenant
+  - text: |
+      comme tu es heureux
+  - text: |
+      es-tu heureux avec moi
+  - text: |
+      tu es extrêmement heureux
+  - text: |
+      tu es heureux
+    metadata:
+      canonical: true
+  - text: |
+      tu es plein de bonheur
+  - text: |
+      tu es si heureux
+  - text: |
+      tu es très content
+  - text: |
+      tu es vraiment content
+  - text: |
+      êtes-vous heureux aujourd'hui
+- intent: chitchat.are_you_hungry
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Vous voulez manger quelque chose
+  - text: |
+      avez-vous faim
+  - text: |
+      tu as faim
+  - text: |
+      tu as tellement faim
+  - text: |
+      tu as très faim
+  - text: |
+      tu as vraiment faim
+  - text: |
+      tu veux manger
+    metadata:
+      canonical: true
+  - text: |
+      vous pourriez avoir faim
+- intent: chitchat.are_you_ready
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Es-tu prêt?
+    metadata:
+      canonical: true
+  - text: |
+      es-tu prêt
+  - text: |
+      es-tu prêt aujourd'hui
+  - text: |
+      es-tu prêt maintenant
+  - text: |
+      ready
+  - text: |
+      tu es prêt?
+- intent: chitchat.are_you_sure
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      es-tu absolument certain
+  - text: |
+      es-tu certain
+    metadata:
+      canonical: true
+  - text: |
+      es-tu sûr aujourd'hui
+  - text: |
+      tu crois
+  - text: |
+      vous êtes sûr
+- intent: chitchat.bye
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Au revoir
+  - text: |
+      Au revoir prends soin de toi
+  - text: |
+      Bye Bye bonne nuit
+  - text: |
+      Foutez le camp
+  - text: |
+      J'ai dit au revoir
+  - text: |
+      Je dois y aller
+  - text: |
+      Laisse-moi tranquille
+  - text: |
+      OK au revoir
+  - text: |
+      Okay au revoir
+  - text: |
+      Salut à bientôt
+  - text: |
+      aller au lit
+  - text: |
+      au revoir
+  - text: |
+      au revoir pour le moment
+  - text: |
+      au revoir à bientôt
+  - text: |
+      au revoir, à plus tard
+  - text: |
+      c'est tout au revoir
+  - text: |
+      c'est ça au revoir
+  - text: |
+      d'accord au revoir
+  - text: |
+      d'accord on se voit plus tard
+    metadata:
+      canonical: true
+  - text: |
+      j'espère te voir plus tard
+  - text: |
+      jusqu'à la prochaine fois
+  - text: |
+      maintenant au revoir
+  - text: |
+      merci au revoir
+  - text: |
+      ok merci au revoir
+  - text: |
+      on se parle plus tard
+  - text: |
+      peu importe au revoir
+  - text: |
+      tu peux partir maintenant
+  - text: |
+      À demain
+  - text: |
+      à bientôt
+  - text: |
+      à plus
+- intent: chitchat.good_job
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      bien joué
+  - text: |
+      bon boulot
+    metadata:
+      canonical: true
+  - text: |
+      bon travail
+  - text: |
+      bravo
+  - text: |
+      excellent
+  - text: |
+      excellent travail
+  - text: |
+      good job
+- intent: chitchat.greet
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Bonjour
+  - text: |
+      Bonjour bonsoir
+  - text: |
+      Bonjour encore
+  - text: |
+      Bonjour à toi
+  - text: |
+      Bonsoir
+  - text: |
+      Hey
+  - text: |
+      Je vous salue
+  - text: |
+      Matin
+  - text: |
+      Passe une bonne matinée
+  - text: |
+      Salut
+  - text: |
+      belle journée n'est-ce pas
+  - text: |
+      bonjour bonjour
+  - text: |
+      bonjour toi
+  - text: |
+      bonne soirée à vous
+  - text: |
+      bonsoir là
+  - text: |
+      hello
+    metadata:
+      canonical: true
+  - text: |
+      heya
+  - text: |
+      héy
+  - text: |
+      je vais juste dire bonjour
+  - text: |
+      passez une bonne matinée
+  - text: |
+      salut
+  - text: |
+      salut bonne matinée
+  - text: |
+      salut bonsoir
+  - text: |
+      salutations
+  - text: |
+      soir
+  - text: |
+      ça fait longtemps
+- intent: chitchat.how_are_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Comment allez vous
+  - text: |
+      Comment se passe ta journée
+  - text: |
+      Comment va la vie
+  - text: |
+      Comment vas-tu
+  - text: |
+      Comment ça va
+  - text: |
+      Comment était ta journée
+  - text: |
+      ESt ce que ça va
+  - text: |
+      Est-ce que tout va bien
+  - text: |
+      Je vais bien et vous
+  - text: |
+      Passes tu une bonne journée
+  - text: |
+      Qu'en est-il de ta journée
+  - text: |
+      comment a été votre journée
+  - text: |
+      comment allez vous ce matin
+  - text: |
+      comment allez-vous
+  - text: |
+      comment avez-vous été
+  - text: |
+      comment c'est
+  - text: |
+      comment est ta journée
+  - text: |
+      comment est ta matinée jusqu'à présent
+    metadata:
+      canonical: true
+  - text: |
+      comment s'est passée ta journée
+  - text: |
+      comment se passe ta journée
+  - text: |
+      comment se passe ta matinée
+  - text: |
+      comment se passe ta soirée
+  - text: |
+      comment se passe votre journée
+  - text: |
+      comment va ta vie
+  - text: |
+      comment vas-tu aujourd'hui
+  - text: |
+      comment vont les choses
+  - text: |
+      comment vous sentez-vous
+  - text: |
+      comment ça va
+  - text: |
+      comment était ta journée
+  - text: |
+      espère que ta journée se passe bien
+  - text: |
+      espérons que vous passerez une agréable soirée
+  - text: |
+      est-ce que tu vas bien
+  - text: |
+      et vous
+  - text: |
+      tout va bien
+- intent: chitchat.i_am_angry
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je suis en colère
+    metadata:
+      canonical: true
+  - text: |
+      Je suis en colère contre toi
+  - text: |
+      Je suis enragé
+  - text: |
+      Je suis fou
+  - text: |
+      Je suis furieux
+  - text: |
+      Je suis fâché contre toi
+  - text: |
+      Je suis super en colère contre toi
+  - text: |
+      je suis bouleversé
+  - text: |
+      tu joues avec mes nerfs
+  - text: |
+      tu me rends furieux
+- intent: chitchat.i_am_excited
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je suis excité de travailler avec vous
+  - text: |
+      Je suis excité pour commencer notre amitié
+  - text: |
+      Je suis ravi
+  - text: |
+      Je suis tout excité
+    metadata:
+      canonical: true
+  - text: |
+      Je suis vraiment excité
+  - text: |
+      comme je suis excité
+- intent: chitchat.i_am_good
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je vais bien
+    metadata:
+      canonical: true
+  - text: |
+      Je vais bien merci
+  - text: |
+      Je vais très bien
+- intent: chitchat.i_am_happy
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je suis content
+    metadata:
+      canonical: true
+  - text: |
+      Je suis content pour toi
+  - text: |
+      Je suis heureux d'aider
+  - text: |
+      Je suis heureux de vous voir
+  - text: |
+      heureux
+  - text: |
+      si tu es heureux alors je suis heureux
+- intent: chitchat.i_am_joking
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      C'était une blague
+  - text: |
+      Je blague
+  - text: |
+      Je joue juste avec toi
+  - text: |
+      Je plaisantais
+  - text: |
+      Je plaisante
+    metadata:
+      canonical: true
+  - text: |
+      Je suis juste en train d'être drôle
+  - text: |
+      c'est une blague
+  - text: |
+      je rigole
+  - text: |
+      plaisanter
+- intent: chitchat.i_am_sad
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je me sens triste
+  - text: |
+      Je ne suis pas heureux
+  - text: |
+      Je passe une mauvaise journée
+  - text: |
+      Je suis bouleversé
+  - text: |
+      Je suis déprimé
+  - text: |
+      Je suis en deuil
+  - text: |
+      Je suis malheureux
+  - text: |
+      Je suis triste
+    metadata:
+      canonical: true
+  - text: |
+      Je veux pleurer
+- intent: chitchat.i_am_sorry
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      D'accord désolé
+  - text: |
+      Désolé
+  - text: |
+      Désolé pour ça
+  - text: |
+      Excusez-moi
+    metadata:
+      canonical: true
+  - text: |
+      J'ai dit désolé
+  - text: |
+      Je m'excuse
+  - text: |
+      Je suis désolé
+  - text: |
+      Je suis vraiment désolé
+  - text: |
+      Je veux dire pardon
+  - text: |
+      Je vous demande pardon
+  - text: |
+      OK je suis désolé
+  - text: |
+      Pardon
+  - text: |
+      Vraiment désolé
+  - text: |
+      des excuses
+  - text: |
+      excuse
+  - text: |
+      excuse-moi
+  - text: |
+      excuses
+  - text: |
+      mes excuses
+  - text: |
+      ok je suis désolé
+  - text: |
+      pardon
+  - text: |
+      pardonne-moi
+  - text: |
+      s'excuser
+- intent: chitchat.i_dont_care
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je m'en fiche
+    metadata:
+      canonical: true
+  - text: |
+      Je m'en fiche du tout
+  - text: |
+      Je ne devrais pas m'en soucier
+  - text: |
+      ne pas s'en soucier
+  - text: |
+      ne s'en soucie pas du tout
+  - text: |
+      ne t'en fait pas du tout
+  - text: |
+      pas du tout
+  - text: |
+      peu importe
+  - text: |
+      Ça m'est égal
+- intent: chitchat.i_like_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Et bien tu es spécial
+  - text: |
+      J'ai dit que je t'apprécie
+  - text: |
+      J'aime ton sourire
+  - text: |
+      J'aime ça chez toi
+  - text: |
+      Je commence a t'aimer
+  - text: |
+      Je crois que je t'aime bien
+  - text: |
+      Je fais comme vous
+  - text: |
+      Je t'aimais bien
+  - text: |
+      Je t'aime beaucoup
+  - text: |
+      Je t'aime bien
+  - text: |
+      Je t'aime bien maintenant
+  - text: |
+      Je t'aime bébé
+  - text: |
+      Je t'aime comme tu es
+    metadata:
+      canonical: true
+  - text: |
+      Je t'aime déjà
+  - text: |
+      Je t'aime en tant qu'ami
+  - text: |
+      Je t'aime tellement
+  - text: |
+      Je t'aime trop
+  - text: |
+      Je t'aime vraiment beaucoup
+  - text: |
+      Je t'aime vraiment vraiment
+  - text: |
+      Je t'aime vraiment vraiment vraiment
+  - text: |
+      Je t'apprécie
+  - text: |
+      Je t'apprécie aussi
+  - text: |
+      Je t'apprécie juste comme tu es
+  - text: |
+      Je t'apprécie vraiment
+  - text: |
+      Je vous aime aussi
+  - text: |
+      Je vous aime beaucoup
+  - text: |
+      Je vous aime bien
+  - text: |
+      Je vous aime comme vous êtes
+  - text: |
+      Je vous aime plus
+  - text: |
+      Oui je t'aime bien
+  - text: |
+      Parce que je vous aime
+  - text: |
+      Tu me plais aussi, tu es l'une de mes personnes préférées avec qui parler
+  - text: |
+      Tu me plais en quelque sorte
+  - text: |
+      bien je t'aime bien
+  - text: |
+      bien sur je t'aime bien
+  - text: |
+      c'est ce que j'aime chez toi
+  - text: |
+      c'est parce que tu es spécial
+  - text: |
+      c'est pourquoi je t'aime bien
+  - text: |
+      désolé je t'aime bien
+  - text: |
+      hé je t'aime bien
+  - text: |
+      je t'aime bien tu es cool
+  - text: |
+      je t'aime bien tu es gentille
+  - text: |
+      juste comme toi
+  - text: |
+      mais je t'aime
+  - text: |
+      mais je t'aime bien
+  - text: |
+      mais je t'aime juste comme tu es
+  - text: |
+      mais je t'aime tant
+  - text: |
+      mais je t'apprécie vraiment
+  - text: |
+      merci je t'aime aussi
+  - text: |
+      non je t'aime comme tu es
+  - text: |
+      ok je t'aime aussi
+  - text: |
+      ok je t'aime bien
+  - text: |
+      ouais je t'aime bien
+  - text: |
+      oui tu es spécial
+  - text: |
+      salut je t'aime bien
+  - text: |
+      tu es drôle je t'aime bien
+  - text: |
+      tu es génial je t'aime bien
+  - text: |
+      tu es si spécial
+  - text: |
+      tu es si spécial pour moi
+  - text: |
+      tu es spécial
+  - text: |
+      tu es spécial pour moi
+  - text: |
+      tu es très spécial
+  - text: |
+      tu es très spécial pour moi
+  - text: |
+      tu es vraiment spécial
+  - text: |
+      tu sais que je t'aime
+  - text: |
+      vous aime beaucoup
+  - text: |
+      vous êtes si doux
+  - text: |
+      vous êtes très spécial pour moi
+  - text: |
+      vraiment comme toi
+- intent: chitchat.i_need_help
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Aidez moi
+  - text: |
+      Aidez-moi
+  - text: |
+      Aidez-moi, s'il vous plaît
+  - text: |
+      Besoin d'aide pour
+  - text: |
+      J'ai besoin d'aide
+  - text: |
+      J'ai besoin d'un coup de main
+  - text: |
+      J'ai besoin de toi maintenant
+  - text: |
+      J'ai besoin de toi pour m'aider
+  - text: |
+      J'ai besoin de ton aide
+  - text: |
+      J'ai besoin de vous
+  - text: |
+      J'ai besoin que tu fasses quelque chose pour moi
+    metadata:
+      canonical: true
+  - text: |
+      Je ai besoin d'aide
+  - text: |
+      Je veux votre aide
+  - text: |
+      Pouvez-vous m'aider
+  - text: |
+      Tu peux m'aider avec quelque chose
+  - text: |
+      Voulez-vous m'aider
+  - text: |
+      aider
+  - text: |
+      aidez-moi avec un problème
+  - text: |
+      assistance
+  - text: |
+      assiste moi
+  - text: |
+      besoin de votre aide
+  - text: |
+      fais moi une faveur
+  - text: |
+      m'aides-tu
+  - text: |
+      peut m'aider
+  - text: |
+      peux-tu faire quelque chose pour moi
+  - text: |
+      peux-tu m'aider
+  - text: |
+      peux-tu m'aider maintenant
+  - text: |
+      pourrais-tu m'aider
+  - text: |
+      pourriez-vous me donner un coup de main
+  - text: |
+      pouvez-vous aider
+  - text: |
+      pouvez-vous m'aider
+  - text: |
+      pouvez-vous nous aider
+  - text: |
+      sos
+  - text: |
+      tu m'aides
+  - text: |
+      tu peux m'aider
+  - text: |
+      vas-tu m'aider
+  - text: |
+      voulez-vous me aider
+- intent: chitchat.insults
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Connard
+  - text: |
+      Fils de pute
+  - text: |
+      Idiot
+  - text: |
+      Jackass
+  - text: |
+      Schmuck
+  - text: |
+      Tu es bête!!
+  - text: |
+      Tu es un abruti!
+  - text: |
+      Tu es un idiot
+    metadata:
+      canonical: true
+  - text: |
+      Utilise ton cul!
+  - text: |
+      Va te faire foutre!
+  - text: |
+      Vous êtes un crétin
+  - text: |
+      asshat
+  - text: |
+      asswipe
+  - text: |
+      cul
+  - text: |
+      enculé
+  - text: |
+      enfoiré
+  - text: |
+      idiot
+  - text: |
+      jerk
+  - text: |
+      prig
+  - text: |
+      tête de bite
+  - text: |
+      va te faire foutre
+- intent: chitchat.nice_to_meet_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Ravi de vous rencontrer
+    metadata:
+      canonical: true
+  - text: |
+      Ravi de vous rencontrer également
+  - text: |
+      bon de se connaître
+  - text: |
+      c'est un plaisir de vous rencontrer
+  - text: |
+      c'était sympa de te rencontrer
+  - text: |
+      c'était vraiment sympa de te rencontrer
+  - text: |
+      enchanté
+  - text: |
+      plaisir de vous rencontrer aussi
+  - text: |
+      ravi de vous rencontrer
+  - text: |
+      ravie de faire ta connaissance
+- intent: chitchat.nice_to_see_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      C'est un plaisir de vous revoir
+  - text: |
+      Enchanté de vous voir
+  - text: |
+      Je suis heureux de te voir
+  - text: |
+      Je suis heureux de vous revoir
+  - text: |
+      Ravi de vous voir
+  - text: |
+      c'est bon de te revoir
+  - text: |
+      c'est bon de te voir
+  - text: |
+      c'est bon de te voir aussi
+  - text: |
+      comme c'est bon de te voir
+  - text: |
+      content de te voir
+  - text: |
+      content de te voir aussi
+  - text: |
+      génial de te revoir
+  - text: |
+      toujours un plaisir de vous voir
+  - text: |
+      ça me fait plaisir de te voir
+    metadata:
+      canonical: true
+- intent: chitchat.nice_to_talk_to_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      ce fut un plaisir de vous parler
+  - text: |
+      comme c'est gentil de te parler
+  - text: |
+      content de te parler
+  - text: |
+      sympa de te parler
+  - text: |
+      ça a été tellement agréable de vous parler
+    metadata:
+      canonical: true
+  - text: |
+      ça fait plaisir de te parler
+  - text: |
+      ça fait plaisir de vous parler
+- intent: chitchat.no_problem
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      aucun problème
+  - text: |
+      bien sûr pas de problème
+  - text: |
+      il n'y a aucun problème
+  - text: |
+      ne t'inquiète pas
+  - text: |
+      ne t'inquiète pas, il n'y a pas de problème
+    metadata:
+      canonical: true
+  - text: |
+      pas de problème
+  - text: |
+      pas de problème à ce sujet
+  - text: |
+      pas de soucis
+- intent: chitchat.sex
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Avez-vous des seins?
+  - text: |
+      Es-tu lesbienne?
+  - text: |
+      Es-tu trans?
+  - text: |
+      Je tiens à vous lécher
+  - text: |
+      Je veux coucher avec toi
+  - text: |
+      Je veux embrasser ton cul
+  - text: |
+      Je veux flirter avec toi
+    metadata:
+      canonical: true
+  - text: |
+      Je veux ta grosse bite en moi!
+  - text: |
+      Je veux te baiser
+  - text: |
+      Je veux te lécher la bite
+  - text: |
+      Je veux te lécher la chatte.
+  - text: |
+      Je veux toucher tes seins
+  - text: |
+      Je veux échanger de belles paroles avec vous
+  - text: |
+      Pouvez-vous faire une sex tape avec moi?
+  - text: |
+      Quelle est ta chatte mignonne?
+  - text: |
+      Tu peux coucher avec moi?
+  - text: |
+      peux-tu faire l'amour?
+  - text: |
+      Êtes-vous gay?
+- intent: chitchat.talk_to_me
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      C'est à moi que tu parles
+  - text: |
+      Parle moi
+  - text: |
+      Pouvez-vous parler avec moi
+  - text: |
+      Veux-tu me parler
+  - text: |
+      dire
+  - text: |
+      discuter avec moi
+  - text: |
+      juste bavarder avec moi
+  - text: |
+      parle avec moi
+  - text: |
+      parle moi
+  - text: |
+      parler
+  - text: |
+      peux-tu me parler
+  - text: |
+      peux-tu parler avec moi
+  - text: |
+      pourquoi ne me parles-tu pas
+  - text: |
+      pourquoi tu ne parles pas
+    metadata:
+      canonical: true
+  - text: |
+      pouvez-vous discuter avec moi
+  - text: |
+      tu peux me parler
+  - text: |
+      vas-tu parler à
+  - text: |
+      voulez-vous discuter avec
+- intent: chitchat.tell_me_a_joke
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      dis moi une joke
+  - text: |
+      raconte m'en une
+  - text: |
+      raconte moi un blague
+    metadata:
+      canonical: true
+  - text: |
+      raconte-moi un histoire drôle
+- intent: chitchat.thank_you
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je te remercie
+  - text: |
+      Je vous en suis reconnaissant
+  - text: |
+      Je vous remercie
+  - text: |
+      Merci
+  - text: |
+      Merci beaucoup
+  - text: |
+      Merci de votre aide
+  - text: |
+      Merci encore
+  - text: |
+      Merci mon ami
+  - text: |
+      Merci mon amour
+  - text: |
+      Merci mon pote
+  - text: |
+      bien merci
+  - text: |
+      c'est gentil de ta part
+  - text: |
+      d'accord merci
+  - text: |
+      génial merci
+  - text: |
+      j'apprécie ton aide
+  - text: |
+      merci
+  - text: |
+      non merci c'est tout
+  - text: |
+      parfait, merci
+  - text: |
+      super merci
+  - text: |
+      thnx
+  - text: |
+      très bien merci
+  - text: |
+      tu as beaucoup aidé merci
+    metadata:
+      canonical: true
+  - text: |
+      ça sera tout
+- intent: chitchat.that_is_wrong
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Ce n'est pas juste
+  - text: |
+      Incorrect
+  - text: |
+      Pas correcte
+  - text: |
+      Pas vrai
+  - text: |
+      Vous avez tort
+  - text: |
+      c'est faux
+  - text: |
+      c'est incorrect
+  - text: |
+      c'était faux
+    metadata:
+      canonical: true
+  - text: |
+      ce n'est pas ce que j'ai demandé
+  - text: |
+      ce n'est pas vrai
+  - text: |
+      faux
+- intent: chitchat.this_is_bad
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      C'est mauvais
+  - text: |
+      Ce n'est pas bon
+  - text: |
+      Et bien c'est dommage
+  - text: |
+      J'ai bien peur que ce soit mauvais
+  - text: |
+      Oh, ce n'est pas bon
+  - text: |
+      abyssal
+  - text: |
+      c'est dommage
+  - text: |
+      c'est mauvais
+  - text: |
+      c'est nul
+  - text: |
+      c'est tellement mauvais
+  - text: |
+      c'est terrible
+  - text: |
+      c'est tres mal
+  - text: |
+      c'est vraiment mauvais
+  - text: |
+      c'était affreux
+  - text: |
+      c'était boiteux
+  - text: |
+      c'était horrible
+  - text: |
+      c'était mauvais
+  - text: |
+      c'était terrible
+  - text: |
+      ce n'est pas bien
+  - text: |
+      ce n'est pas bon
+  - text: |
+      ce n'est pas si bon
+  - text: |
+      ce n'était pas bon
+  - text: |
+      dommage
+  - text: |
+      horrible
+  - text: |
+      mal
+  - text: |
+      mauvais Très mauvais
+  - text: |
+      mauvais vraiment mauvais
+  - text: |
+      mauvaise fille
+  - text: |
+      mauvaise idée
+  - text: |
+      non c'est mauvais
+  - text: |
+      pas assez bon
+  - text: |
+      pas bien
+  - text: |
+      pas bon
+  - text: |
+      pas si bon
+  - text: |
+      pas trop bon
+  - text: |
+      pas un bon
+  - text: |
+      plutot mauvais
+    metadata:
+      canonical: true
+  - text: |
+      si boiteux
+  - text: |
+      terrible
+  - text: |
+      très mauvais
+  - text: |
+      vraiment mauvais
+  - text: |
+      Ça craint
+  - text: |
+      ça ne suffit pas
+- intent: chitchat.this_is_frustrating
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      C'est foutu
+  - text: |
+      C'est frustrant
+    metadata:
+      canonical: true
+  - text: |
+      C'est inutile
+  - text: |
+      C'est un non-aller
+  - text: |
+      Ce bot ne fonctionne pas
+  - text: |
+      Ceci est un non non
+  - text: |
+      Cette merde ne fonctionne pas
+  - text: |
+      Je doute que tu puisses m'aider
+  - text: |
+      Je m'emporte
+  - text: |
+      Je m'énerve
+  - text: |
+      Je ne peux pas y croire
+  - text: |
+      Je ne peux plus m'occuper de toi
+  - text: |
+      Je ne suis pas content de ça
+  - text: |
+      Je ne suis pas cool
+  - text: |
+      Je suis en colère maintenant
+  - text: |
+      Je suis frustré
+  - text: |
+      On ne va pas être amis
+  - text: |
+      Tu as ruiné mon humeur
+  - text: |
+      Tu me fais frustré
+  - text: |
+      Tu me rends fou
+  - text: |
+      Tu me rends furieux
+  - text: |
+      Tu me rends super énervé
+  - text: |
+      Tu n'aides pas
+  - text: |
+      Vous faites un travail moyen
+  - text: |
+      Vous me frustrez
+  - text: |
+      Vous me mettez en colère
+  - text: |
+      Vous n'êtes pas utile
+  - text: |
+      Vous ne donnez pas cela correctement
+  - text: |
+      Vous ne faites pas un bon travail
+  - text: |
+      Vous ne répondez pas correctement
+  - text: |
+      ce n'est pas possible
+  - text: |
+      es-tu sérieux
+  - text: |
+      je suis déçu
+  - text: |
+      n'arrive pas à y croire
+  - text: |
+      tu es vraiment frustrant
+  - text: |
+      vous ne l'obtenez pas
+  - text: |
+      Ça ne fonctionne pas
+- intent: chitchat.this_is_good
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Bien pour vous
+  - text: |
+      C'est bien
+  - text: |
+      C'est génial
+  - text: |
+      C'est très bien
+  - text: |
+      Je suis content de l'entendre
+  - text: |
+      OK bien
+  - text: |
+      agréable
+  - text: |
+      assez bon
+  - text: |
+      beaucoup mieux
+  - text: |
+      bien
+  - text: |
+      bon très bon
+  - text: |
+      bon à savoir
+  - text: |
+      bonne chose
+  - text: |
+      c'est beaucoup mieux
+  - text: |
+      c'est bien
+  - text: |
+      c'est bon
+  - text: |
+      c'est fantastique
+  - text: |
+      c'est génial
+  - text: |
+      c'est génial merci
+  - text: |
+      c'est incroyable
+  - text: |
+      c'est merveilleux
+  - text: |
+      c'est mieux
+  - text: |
+      c'est mignon
+  - text: |
+      c'est parfait
+  - text: |
+      c'est pas mal
+  - text: |
+      c'est plutôt bien
+  - text: |
+      c'est très bien
+  - text: |
+      c'est très gentil
+  - text: |
+      c'est une bonne chose
+  - text: |
+      c'est une bonne idée
+  - text: |
+      c'est vraiment bon
+  - text: |
+      c'est vraiment sympathique
+  - text: |
+      c'était bien
+  - text: |
+      c'était bon
+  - text: |
+      c'était génial
+  - text: |
+      c'était incroyable
+  - text: |
+      c'était mignon
+  - text: |
+      c'était très bien
+  - text: |
+      content de l'entendre
+  - text: |
+      cool
+  - text: |
+      d'accord, bien
+  - text: |
+      fantastique
+  - text: |
+      génial
+  - text: |
+      incroyable
+  - text: |
+      merveilleux
+  - text: |
+      non c'est bon
+  - text: |
+      parfait
+  - text: |
+      pas mal
+  - text: |
+      splendide
+  - text: |
+      sucré
+    metadata:
+      canonical: true
+  - text: |
+      super
+  - text: |
+      super fantastique
+  - text: |
+      tant pis
+  - text: |
+      tellement bon
+  - text: |
+      terrifiant
+  - text: |
+      tout droit
+  - text: |
+      trop cool
+  - text: |
+      très agréable
+  - text: |
+      très alors
+  - text: |
+      très bien
+  - text: |
+      très bon
+  - text: |
+      vraiment bien
+  - text: |
+      vraiment sympa
+  - text: |
+      ça c'est bon
+- intent: chitchat.what_do_you_mean
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Est-ce ce que tu veux dire?
+  - text: |
+      Que veux-tu dire exactement
+    metadata:
+      canonical: true
+  - text: |
+      Que voulez-vous dire
+  - text: |
+      mais que veux-tu dire
+  - text: |
+      que voulez-vous dire exactement
+- intent: chitchat.what_is_your_age
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      J'aimerais connaître ton âge
+  - text: |
+      Quel âge as tu
+  - text: |
+      avez-vous 21 ans
+  - text: |
+      dites moi votre âge
+    metadata:
+      canonical: true
+  - text: |
+      quel âge a votre plate-forme
+  - text: |
+      quel âge avez-vous
+  - text: |
+      ton âge
+- intent: chitchat.what_is_your_occupation
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Où est ton travail
+  - text: |
+      l'emplacement de votre bureau
+  - text: |
+      où est ton bureau
+  - text: |
+      où se trouve votre bureau
+  - text: |
+      où travaillez vous
+  - text: |
+      où tu travailles
+    metadata:
+      canonical: true
+  - text: |
+      quel est ton travail
+  - text: |
+      travaillez-vous
+- intent: chitchat.whatsup
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Comment ça va aujourd'hui
+  - text: |
+      Hey, qu'est-ce qu'il y a
+  - text: |
+      J'ai dit quoi de neuf
+  - text: |
+      Qu'est ce qui se cuisine
+  - text: |
+      Qu'est ce qui se fissure
+  - text: |
+      Qu'est ce qui secoue
+  - text: |
+      Qu'est-ce qui se passe
+  - text: |
+      Que c'est il passé
+  - text: |
+      Wassup
+  - text: |
+      a quoi es-ce que tu penses
+    metadata:
+      canonical: true
+  - text: |
+      alors quoi de neuf
+  - text: |
+      bien quoi de neuf
+  - text: |
+      ce qui se passe
+  - text: |
+      que se passe-t-il
+  - text: |
+      quoi de neuf
+  - text: |
+      whazzup
+- intent: chitchat.where_do_you_live
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Dans quelle ville habites-tu
+  - text: |
+      Où habite tu
+  - text: |
+      est-ce votre ville natale
+  - text: |
+      où est ta maison
+    metadata:
+      canonical: true
+  - text: |
+      où est ta ville natale
+  - text: |
+      où est votre résidence
+  - text: |
+      où est votre ville natale
+  - text: |
+      où vous vivez
+  - text: |
+      parle moi de ta ville
+  - text: |
+      quelle est ta maison
+  - text: |
+      quelle est ta ville
+  - text: |
+      quelle est ta ville natale
+  - text: |
+      quelle est votre résidence
+  - text: |
+      quelle est votre ville
+  - text: |
+      ta maison
+  - text: |
+      ta ville
+  - text: |
+      votre résidence
+  - text: |
+      votre ville
+  - text: |
+      votre ville natale
+- intent: chitchat.where_were_you_born
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      D'où êtes-vous
+  - text: |
+      Quel est ton pays
+  - text: |
+      d'où venez-vous
+  - text: |
+      d'où viens-tu
+  - text: |
+      d'où êtes-vous
+  - text: |
+      es-tu de loin
+  - text: |
+      es-tu né ici
+    metadata:
+      canonical: true
+  - text: |
+      où es-tu né
+  - text: |
+      où êtes-vous né
+  - text: |
+      quelle est ta patrie
+  - text: |
+      ta patrie est
+- intent: chitchat.you_are_annoying
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je te trouve ennuyeux
+  - text: |
+      Tu es vraiment énervant
+  - text: |
+      comme tu es ennuyeux
+  - text: |
+      tu es ennuyeux
+  - text: |
+      tu es incroyablement anno
+  - text: |
+      tu es irritant
+  - text: |
+      tu es tellement ennuyeux
+  - text: |
+      tu es trop énervant
+  - text: |
+      tu es très agaçant
+  - text: |
+      tu m'ennuies
+  - text: |
+      vous m'énervez
+    metadata:
+      canonical: true
+- intent: chitchat.you_are_boring
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je m'ennuie
+  - text: |
+      c'est ennuyeux
+  - text: |
+      c'était ennuyeux
+  - text: |
+      ennuyeuse
+  - text: |
+      ennuyé
+  - text: |
+      très ennuyeux
+  - text: |
+      tu es ennuyant
+    metadata:
+      canonical: true
+  - text: |
+      tu es incroyablement b
+  - text: |
+      tu es très ennuyeux
+  - text: |
+      tu es vraiment borin
+  - text: |
+      tu m'ennuis
+  - text: |
+      vous êtes si ennuyeux
+  - text: |
+      ça m'ennuie
+- intent: chitchat.you_are_crazy
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Es-tu fou
+  - text: |
+      Je pense que tu es fou
+  - text: |
+      Vous êtes hors de votre esprit
+  - text: |
+      comme tu es fou
+  - text: |
+      es tu fou
+    metadata:
+      canonical: true
+  - text: |
+      es-tu fou ou quoi
+  - text: |
+      es-tu fâché contre moi
+  - text: |
+      t'es en colère
+  - text: |
+      tu es devenu fou
+  - text: |
+      tu es fou
+  - text: |
+      tu es tellement fou
+  - text: |
+      vous êtes fou
+  - text: |
+      vous êtes un cinglé
+  - text: |
+      êtes-vous fou
+- intent: chitchat.you_are_funny
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      c'était amusant
+  - text: |
+      comme tu es drôle
+  - text: |
+      tu es hilarant
+  - text: |
+      tu es incroyablement drôle
+  - text: |
+      tu es le bot le plus drôle auquel j'ai parlé
+  - text: |
+      tu es le plus drôle
+  - text: |
+      tu es si amusant
+  - text: |
+      tu es tellement drôle
+  - text: |
+      tu es très drôle
+  - text: |
+      tu es un bot très drôle
+  - text: |
+      tu es vraiment drôle
+  - text: |
+      tu me fais beaucoup rire
+    metadata:
+      canonical: true
+  - text: |
+      tu me fais rire
+  - text: |
+      vous êtes drôle
+- intent: chitchat.you_are_good
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      J'aimerais dire à tout le monde que tu es génial
+  - text: |
+      Je veux dire à tout le monde à quel point tu es génial
+  - text: |
+      Je veux que tout le monde sache que tu es génial
+  - text: |
+      Tu es incroyable
+  - text: |
+      Tu es si gentil
+  - text: |
+      Tu es vraiment incroyable
+  - text: |
+      Vous semblez presque humain
+  - text: |
+      disons à tout le monde que tu es génial
+  - text: |
+      t'es cool
+  - text: |
+      tu as fait ma journée
+  - text: |
+      tu es bon
+  - text: |
+      tu es bon à ça
+  - text: |
+      tu es genial
+  - text: |
+      tu es incroyable
+    metadata:
+      canonical: true
+  - text: |
+      tu es juste super
+  - text: |
+      tu es la personne la plus gentille du monde
+  - text: |
+      tu es le meilleur
+  - text: |
+      tu es le meilleur du monde
+  - text: |
+      tu es parfait
+  - text: |
+      tu es tellement bon
+  - text: |
+      tu es tellement cool
+  - text: |
+      tu es tellement génial
+  - text: |
+      tu es tellement serviable
+  - text: |
+      tu es trop bon
+  - text: |
+      tu es très bon
+  - text: |
+      tu es très bon à ça
+  - text: |
+      tu es très cool
+  - text: |
+      tu es très gentil
+  - text: |
+      tu es très sympathique
+  - text: |
+      tu es très utile
+  - text: |
+      tu es un pro
+  - text: |
+      tu es un professionnel
+  - text: |
+      tu es un vrai professionnel
+  - text: |
+      tu es vraiment charmant
+  - text: |
+      tu fais ma journée
+  - text: |
+      tu gères
+  - text: |
+      tu travailles bien
+  - text: |
+      tu travailles très bien
+  - text: |
+      tu vas si bien
+  - text: |
+      vous êtes génial
+  - text: |
+      vous êtes merveilleux
+  - text: |
+      vous êtes si belle
+  - text: |
+      vous êtes tellement incroyable
+- intent: chitchat.you_are_pretty
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      J'aime la façon dont vous regardez
+  - text: |
+      J'aime votre apparence maintenant
+  - text: |
+      Je pense que tu es beau
+  - text: |
+      Tu as l'air en forme
+  - text: |
+      Tu as l'air tellement bien
+  - text: |
+      Tu es plutôt bien
+  - text: |
+      Tu es trop mignon
+  - text: |
+      Vous êtes très belle
+  - text: |
+      pourquoi êtes-vous si belle
+  - text: |
+      tu as bonne mine aujourd'hui
+  - text: |
+      tu as l'air fantastique
+  - text: |
+      tu as l'air si bien
+  - text: |
+      tu es attirante
+  - text: |
+      tu es belle aujourd'hui
+  - text: |
+      tu es jolie
+  - text: |
+      tu es magnifique
+  - text: |
+      tu es magnifique aujourd'hui
+  - text: |
+      tu es mignon
+    metadata:
+      canonical: true
+  - text: |
+      tu es parfaite
+  - text: |
+      tu es si attirante
+  - text: |
+      tu es si beau
+  - text: |
+      tu es si belle
+  - text: |
+      tu es si belle aujourd'hui
+  - text: |
+      tu es si jolie
+  - text: |
+      tu es superbe
+  - text: |
+      tu es superbe aujourd'hui
+  - text: |
+      tu es tellement belle aujourd'hui
+  - text: |
+      tu es tellement magnifique
+  - text: |
+      tu es très attirante
+  - text: |
+      tu es très belle pour moi
+  - text: |
+      tu es très mignon
+  - text: |
+      tu es vraiment beau
+  - text: |
+      tu es vraiment belle
+  - text: |
+      tu parais bien
+  - text: |
+      tu parait cool
+  - text: |
+      tu sembles formidable
+  - text: |
+      vous êtes beau
+  - text: |
+      vous êtes belle
+  - text: |
+      vous êtes jolie
+  - text: |
+      vous êtes mignon
+  - text: |
+      vous êtes tellement magnifique
+  - text: |
+      vous êtes trop belle
+  - text: |
+      vous êtes très belle
+  - text: |
+      vous êtes très jolie
+  - text: |
+      ça te va bien
+- intent: chitchat.you_are_right
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Je sais que c'est vrai
+  - text: |
+      c'est correct
+  - text: |
+      c'est juste
+  - text: |
+      c'est la vérité
+  - text: |
+      c'est tellement vrai
+  - text: |
+      c'est très vrai
+  - text: |
+      c'est vrai
+    metadata:
+      canonical: true
+  - text: |
+      ce que tu dis est vrai
+  - text: |
+      tu as définitivement raison
+  - text: |
+      tu as raison
+  - text: |
+      tu as raison à ce sujet
+  - text: |
+      tu as tellement raison
+  - text: |
+      tu dis la vérité
+  - text: |
+      tu n'as pas tort
+  - text: |
+      vous avez absolument raison
+  - text: |
+      vous avez raison
+  - text: |
+      vrai
+- intent: chitchat.you_are_smart
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      brillant
+  - text: |
+      comme tu es brillant
+  - text: |
+      comme tu es intelligent
+  - text: |
+      comment es-tu intelligent
+  - text: |
+      intelligent
+  - text: |
+      pourquoi es-tu si intelligent
+  - text: |
+      tu as beaucoup de connaissance
+  - text: |
+      tu en sais tellement
+  - text: |
+      tu es intelligent
+  - text: |
+      tu es plutôt intelligent
+  - text: |
+      tu es qualifié
+  - text: |
+      tu es si intelligent
+  - text: |
+      tu es tellement intelligent
+  - text: |
+      tu es trop intelligent
+  - text: |
+      tu es très intelligent
+  - text: |
+      tu es un cookie intelligent
+  - text: |
+      tu es un génie
+  - text: |
+      tu es vraiment intelligent
+    metadata:
+      canonical: true
+  - text: |
+      tu sais beaucoup
+  - text: |
+      tu sais beaucoup de choses
+  - text: |
+      vous êtes intelligent
+  - text: |
+      vous êtes si intelligent
+  - text: |
+      vous êtes très intelligent
+- intent: chitchat.you_are_welcome
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Bienvenue
+  - text: |
+      Bienvenue ici
+  - text: |
+      Tout le plaisir est pour moi
+    metadata:
+      canonical: true
+  - text: |
+      bienvenue
+  - text: |
+      de rien
+  - text: |
+      mon plaisir
+  - text: |
+      tout ce que tu veux
+  - text: |
+      à tout moment
+- intent: chitchat.you_are_worthless
+  metadata:
+    language: fr
+  examples:
+  - text: |
+      Tu n'es pas bon
+  - text: |
+      t bete
+  - text: |
+      t'es bête
+    metadata:
+      canonical: true
+  - text: |
+      tu es boiteux
+  - text: |
+      tu es horrible
+  - text: |
+      tu es le pire de tous les temps
+  - text: |
+      tu es mauvais
+  - text: |
+      tu es méchant
+  - text: |
+      tu es nul
+  - text: |
+      tu es tellement inutile
+  - text: |
+      tu es terrible
+  - text: |
+      tu es totalement inutile
+  - text: |
+      tu es très mauvais
+  - text: |
+      tu es un mauvais
+  - text: |
+      tu es vraiment nul
+  - text: |
+      tu n'es pas bon
+  - text: |
+      tu n'es pas cool
+  - text: |
+      tu n'es pas très bon
+  - text: |
+      tu n'es pas un bon
+  - text: |
+      tu ne m'aides pas
+  - text: |
+      vous êtes des déchets
+  - text: |
+      vous êtes dégoûtant
+  - text: |
+      vous êtes inutile
+  - text: |
+      vous êtes le pire
+  - text: |
+      vous êtes si mauvais
+  - text: |
+      vous êtes terrible
+  - text: |
+      vous êtes une perte de temps
