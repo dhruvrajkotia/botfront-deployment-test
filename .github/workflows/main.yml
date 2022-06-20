@@ -15,6 +15,11 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: DEV
+    steps:
+      - name: deploy
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -23,6 +28,7 @@ jobs:
       SERVER_ENDPOINT: ${{ secrets.SERVER_ENDPOINT }}
       AUTHENTICATION_TOKEN: ${{ secrets.AUTHENTICATION_TOKEN }}
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
+      SLACK_URL: ${{ secrets.SLACK_URL }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
