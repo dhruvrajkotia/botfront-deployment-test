@@ -28,7 +28,7 @@ jobs:
           SERVER_ENDPOINT: http://34.237.55.114:8888
           AUTHENTICATION_TOKEN: 162G6MgPympbOAqhUy5UhHvL4ozTUSImZJrFTxFiDPF
           PROJECT_ID: chitchat-YsTb2tdVB
-          SLACK_URL: https://hooks.slack.com/services/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
+          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
         run: |
           npm i
           npm run start
