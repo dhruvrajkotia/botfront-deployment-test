@@ -26,7 +26,6 @@ return JSON.stringify(mapsObj)
 }
 
 function updateCredentialYml() {
-    console.log(process.env.SERVER_ENDPOINT.split(':')[0] + process.env.SERVER_ENDPOINT.split(':')[1] + ':5005')
     let doc = yaml.load(fs.readFileSync(path.join(__dirname, 'files', 'credentials.yml'), 'utf8'));
     doc['rasa_addons.core.channels.webchat.WebchatInput'].base_url =  `${process.env.SERVER_ENDPOINT}:5005`;
     fs.writeFile(path.join(__dirname, 'files', 'credentials.yml'), yaml.dump(doc), (err) => {
