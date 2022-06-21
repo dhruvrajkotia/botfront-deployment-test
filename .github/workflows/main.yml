@@ -24,7 +24,7 @@ jobs:
       PROJECT_ID: chitchat-YsTb2tdVB
       SLACK_CHANNEL: cicd-notification
       SLACK_MESSAGE: Starting Build
-      SLACK_WEBHOOK: https://hooks.slack.com/services/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
+      SLACK_WEBHOOK: https://hooks.slack.com/services/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
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Slack Notification
