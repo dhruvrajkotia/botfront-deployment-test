@@ -27,10 +27,6 @@ jobs:
       SLACK_FOOTER: ${{ secrets.SLACK_FOOTER }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
-        if: always()
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -39,3 +35,7 @@ jobs:
         run: |
           npm i
           npm run start
+
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        if: always()
