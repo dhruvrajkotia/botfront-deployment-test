@@ -22,15 +22,12 @@ jobs:
       SERVER_ENDPOINT: http://34.237.55.114:8888
       AUTHENTICATION_TOKEN: 162G6MgPympbOAqhUy5UhHvL4ozTUSImZJrFTxFiDPF
       PROJECT_ID: chitchat-YsTb2tdVB
+      SLACK_CHANNEL: cicd-notification
       SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Slack Notification
-        uses: act10ns/slack@v1
-        with:
-          status: starting
-          channel: "#cicd-notification"
-          message: Starting Build and Deploy...
+        uses: rtCamp/action-slack-notify@v2
         if: always()
 
       - name: Checkout repository
