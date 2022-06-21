@@ -18,21 +18,13 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      SERVER_ENDPOINT: http://34.237.55.114:8888
+      AUTHENTICATION_TOKEN: 162G6MgPympbOAqhUy5UhHvL4ozTUSImZJrFTxFiDPF
+      PROJECT_ID: chitchat-YsTb2tdVB
+      SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v3
-
-      # Runs a set of commands using the runners shell
-      - name: Run Node Script
-        env:
-          SERVER_ENDPOINT: http://34.237.55.114:8888
-          AUTHENTICATION_TOKEN: 162G6MgPympbOAqhUy5UhHvL4ozTUSImZJrFTxFiDPF
-          PROJECT_ID: chitchat-YsTb2tdVB
-          SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
-        run: |
-          npm i
-          npm run start
-
       - name: Slack Notification
         uses: act10ns/slack@v1
         with:
@@ -40,3 +32,12 @@ jobs:
           channel: "#cicd-notification"
           message: Starting Build and Deploy...
         if: always()
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Runs a set of commands using the runners shell
+      - name: Run Node Script
+        run: |
+          npm i
+          npm run start
