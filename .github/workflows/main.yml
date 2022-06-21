@@ -7,7 +7,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: ["main"]
-  pull_request:
+  pull_request_target:
     branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -25,10 +25,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run Node Script
         env:
-          SERVER_ENDPOINT: ${{secrets.SERVER_ENDPOINT}}
-          AUTHENTICATION_TOKEN: ${{secrets.AUTHENTICATION_TOKEN}}
-          PROJECT_ID: ${{secrets.PROJECT_ID}}
-          SLACK_URL: ${{secrets.SLACK_URL}}
+          SERVER_ENDPOINT: ${{ secrets.SERVER_ENDPOINT }}
+          AUTHENTICATION_TOKEN: ${{ secrets.AUTHENTICATION_TOKEN }}
+          PROJECT_ID: ${{ secrets.PROJECT_ID }}
+          SLACK_URL: ${{ secrets.SLACK_URL }}
         run: |
           npm i
           npm run start
