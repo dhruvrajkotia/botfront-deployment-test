@@ -2,6 +2,7 @@ var axios = require('axios');
 var FormData = require('form-data');
 var fs = require('fs');
 var path = require('path');
+const core = require('@actions/core');
 require('dotenv').config();
 
 var filepath = path.join(__dirname, 'files')
@@ -64,6 +65,5 @@ axios(config)
 })
 .catch(function (error) {
     console.log(error);
-    process.exit(1);
-    
+    core.setFailed(error.message);
 });
