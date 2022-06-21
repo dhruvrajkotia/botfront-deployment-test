@@ -3,6 +3,7 @@ var FormData = require('form-data');
 var fs = require('fs');
 var path = require('path');
 const core = require('@actions/core');
+const yaml = require('js-yaml');
 require('dotenv').config();
 
 var filepath = path.join(__dirname, 'files')
@@ -23,6 +24,19 @@ for (let itr= 0; itr < total_files; itr++) {
 
 return JSON.stringify(mapsObj)  
 }
+
+function updateCredentialYml() {
+    console.log(process.env.SERVER_ENDPOINT.split(':')[0] + process.env.SERVER_ENDPOINT.split(':')[1] + ':5005')
+    let doc = yaml.load(fs.readFileSync(path.join(__dirname, 'files', 'credentials.yml'), 'utf8'));
+    doc['rasa_addons.core.channels.webchat.WebchatInput'].base_url =  `${process.env.SERVER_ENDPOINT}:5005`;
+    fs.writeFile(path.join(__dirname, 'files', 'credentials.yml'), yaml.dump(doc), (err) => {
+        if (err) {
+            console.log(err);
+        }
+    });
+}
+
+updateCredentialYml();
 
 let nullArray = new Array(total_files).fill(null)
 
@@ -51,7 +65,7 @@ data.append(`${++ fileCount}`, fs.createReadStream(path.join(__dirname, 'files',
 
 var config = {
   method: 'post',
-  url: `${process.env.SERVER_ENDPOINT}/graphql`,
+  url: `${process.env.SERVER_ENDPOINT}:8888/graphql`,
   headers: {
     'authorization': `${process.env.AUTHENTICATION_TOKEN}`, 
     'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryaetTKSDfdFlHHxmp'
