@@ -32,3 +32,11 @@ jobs:
         run: |
           npm i
           npm run start
+
+      - name: Slack Notification
+        uses: act10ns/slack@v1
+        with:
+          status: starting
+          channel: "#cicd-notification"
+          message: Starting Build and Deploy...
+        if: always()
