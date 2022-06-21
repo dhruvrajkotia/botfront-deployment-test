@@ -18,12 +18,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    environment: DEV
     env:
       SERVER_ENDPOINT: ${{ secrets.SERVER_ENDPOINT }}
       AUTHENTICATION_TOKEN: ${{ secrets.AUTHENTICATION_TOKEN }}
       PROJECT_ID: ${{ secrets.PROJECT_ID }}
       SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
-      SLACK_MESSAGE: ${{ secrets.SLACK_MESSAGE }}
       SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
