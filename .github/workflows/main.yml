@@ -23,6 +23,7 @@ jobs:
       AUTHENTICATION_TOKEN: 162G6MgPympbOAqhUy5UhHvL4ozTUSImZJrFTxFiDPF
       PROJECT_ID: chitchat-YsTb2tdVB
       SLACK_CHANNEL: cicd-notification
+      SLACK_MESSAGE: Starting Build
       SLACK_WEBHOOK: https://hooks.slack.com/services/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
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
