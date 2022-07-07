@@ -50,7 +50,6 @@ jobs:
         run: |
           docker-compose up -d
 
-      # Runs a set of commands using the runners shell
       - name: Run Node Script
         run: |
           npm i
