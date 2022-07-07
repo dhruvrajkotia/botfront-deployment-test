@@ -32,7 +32,7 @@ jobs:
 
       - name: Move folder
         run: |
-          cp -a /. /opt/botfront/dhruv_dev
+          cp -a /. /opt/botfront/dhruv_dev/
 
       - name: Deploy Code
         env:
