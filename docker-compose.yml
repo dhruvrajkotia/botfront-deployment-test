@@ -17,8 +17,6 @@ services:
       - '8888:3000'
     depends_on:
       - mongo
-    env_file:
-      - .env
     environment:
       PORT: 3000
   rasa:
@@ -34,8 +32,6 @@ services:
       - '5005:5005'
     volumes:
       - './models/:/app/models'
-    env_file:
-      - .env
   actions:
     build:
       context: ./actions
@@ -54,8 +50,6 @@ services:
       - '--debug'
       - '--actions'
       - actions
-    env_file:
-      - .env
   duckling:
     image: 'botfront/duckling:latest'
     container_name: botfront-duckling
@@ -74,8 +68,6 @@ services:
       - './botfront-db:/data/db'
     ports:
       - '27017:27017'
-    env_file:
-      - .env
 networks:
   botfront-network: {}
 volumes:
