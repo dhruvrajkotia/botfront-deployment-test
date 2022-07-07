@@ -48,7 +48,7 @@ jobs:
           IMAGES_CURRENT_MONGO: mongo:latest
           IMAGES_CURRENT_ACTIONS: rasa/rasa-sdk:2.1.2
         run: |
-          docker-compose up
+          docker-compose up -d
 
       # Runs a set of commands using the runners shell
       - name: Run Node Script
