@@ -30,6 +30,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Deploy Code
+        run: |
+          botfront down
+          botfront up
+
       # Runs a set of commands using the runners shell
       - name: Run Node Script
         run: |
