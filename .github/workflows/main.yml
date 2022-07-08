@@ -29,10 +29,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          ref: dev
 
       - name: Move folder
         run: |
-          pwd
+          echo $GITHUB_WORKSPACE
 
       - name: Deploy Code
         env:
