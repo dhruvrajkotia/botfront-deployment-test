@@ -36,7 +36,7 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE
-          cp -R $GITHUB_WORKSPACE /opt/botfront/temp/
+          cp -R $GITHUB_WORKSPACE ./
 
       - name: Deploy Code
         env:
