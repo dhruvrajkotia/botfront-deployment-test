@@ -36,7 +36,7 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE
-          cp -R $GITHUB_WORKSPACE ./
+          cp -R $GITHUB_WORKSPACE /home/dhruv/
 
       - name: Deploy Code
         env:
