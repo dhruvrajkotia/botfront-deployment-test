@@ -36,7 +36,7 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE 
-          sudo mv -f $GITHUB_WORKSPACE/* /opt/botfront/dhruv_dev/
+          sudo cp -R 1001:1001 $GITHUB_WORKSPACE/* /opt/botfront/dhruv_dev/
 
       - name: Deploy Code
         env:
