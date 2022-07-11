@@ -36,7 +36,8 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE 
-          mv 1001:1001 $GITHUB_WORKSPACE /home/dhruv/
+          echo ls -la
+          mv 1001:1001 $GITHUB_WORKSPACE /home/
 
       - name: Deploy Code
         env:
