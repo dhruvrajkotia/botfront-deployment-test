@@ -36,8 +36,7 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE 
-          echo $(ls -la)
-          sudo mv $GITHUB_WORKSPACE /home/
+          sudo mv $GITHUB_WORKSPACE /home/dhruv/
 
       - name: Deploy Code
         env:
