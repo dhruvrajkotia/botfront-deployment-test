@@ -43,16 +43,16 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE 
-          sudo cp -R $GITHUB_WORKSPACE/* /opt/botfront/dev_dhruv/
+          sudo cp -R $GITHUB_WORKSPACE/* ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
 
       - name: Stop Running Containers
         run: |
-          cd /opt/botfront/dev_dhruv/
+          cd ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
           sudo botfront down
 
       - name: Deploy Code
         run: |
-          cd /opt/botfront/dev_dhruv/
+          cd ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
           sudo botfront set-project ${{ secrets.PROJECT_ID }}
           sudo botfront up
 
