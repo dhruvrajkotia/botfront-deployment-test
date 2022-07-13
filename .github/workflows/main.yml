@@ -46,6 +46,7 @@ jobs:
       - name: Deploy Code
         run: |
           cd /opt/botfront/dev_dhruv/
+          sudo botfront set-project ${{ secrets.PROJECT_ID }}
           sudo botfront up
 
       - name: Run Node Script
@@ -53,8 +54,8 @@ jobs:
           npm i
           npm run start
 
-      # - name: Slack Notification
-      #   uses: rtCamp/action-slack-notify@v2
-      #   env:
-      #     SLACK_COLOR: ${{ job.status }}
-      #   if: always()
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+        if: always()
