@@ -10,8 +10,6 @@ var filepath = path.join(__dirname, 'files')
 var mapsObj = Object()
 var fileCount = 0
 
-console.log(process.env)
-
 
 var files = fs.readdirSync(filepath, {withFileTypes: true})
 .filter(item => !item.isDirectory() && item.name.startsWith('config'))
@@ -74,6 +72,8 @@ var config = {
   },
   data : data
 };
+
+console.log(config);
 
 axios(config)
 .then(function (response) {
