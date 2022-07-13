@@ -36,7 +36,12 @@ jobs:
         run: |
           echo $GITHUB_WORKSPACE
           cd $GITHUB_WORKSPACE 
-          sudo cp -R $GITHUB_WORKSPACE/* /opt/botfront/dhruv_dev/
+          sudo cp -R $GITHUB_WORKSPACE/* /opt/botfront/dev_dhruv/
+
+      - name: Stop Running Container
+        run: |
+          cd /opt/botfront/dev_dhruv/
+          sudo docker-compose down
 
       - name: Deploy Code
         env:
@@ -56,7 +61,7 @@ jobs:
           IMAGES_CURRENT_MONGO: mongo:latest
           IMAGES_CURRENT_ACTIONS: rasa/rasa-sdk:2.1.2
         run: |
-          cd /opt/botfront/dhruv_dev/
+          cd /opt/botfront/dev_dhruv/
           sudo docker-compose up -d
 
       - name: Run Node Script
