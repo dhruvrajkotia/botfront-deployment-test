@@ -53,8 +53,8 @@ jobs:
       - name: Deploy Code
         run: |
           cd ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
-          sudo botfront set-project ${{ secrets.PROJECT_ID }}
           sudo botfront up
+          sudo botfront set-project ${{ secrets.PROJECT_ID }}
 
       - name: Run Node Script
         run: |
