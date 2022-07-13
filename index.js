@@ -73,7 +73,7 @@ var config = {
   data : data
 };
 
-console.log(`${process.env.SERVER_ENDPOINT}`);
+console.log(process.env.SERVER_ENDPOINT);
 
 axios(config)
 .then(function (response) {
