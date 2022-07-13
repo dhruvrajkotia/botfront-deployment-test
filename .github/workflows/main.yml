@@ -27,6 +27,13 @@ jobs:
       SLACK_FOOTER: ${{ secrets.SLACK_FOOTER }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_TITLE: Start Deployment
+        if: always()
+
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
@@ -58,4 +65,5 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: ${{ job.status }}
+          SLACK_TITLE: Deployment Completed
         if: always()
