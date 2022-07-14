@@ -56,6 +56,10 @@ jobs:
           sudo botfront up
           sudo botfront set-project ${{ secrets.PROJECT_ID }}
 
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+        shell: bash
+
       - name: Run Node Script
         run: |
           cd ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
