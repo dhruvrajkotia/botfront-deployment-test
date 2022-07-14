@@ -27,7 +27,7 @@ jobs:
       SLACK_FOOTER: ${{ secrets.SLACK_FOOTER }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Slack Notification
+      - name: Slack Notification - Start Deployment
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: "#EED202"
@@ -56,8 +56,8 @@ jobs:
           sudo botfront up
           sudo botfront set-project ${{ secrets.PROJECT_ID }}
 
-      - name: Sleep for 30 seconds
-        run: sleep 30s
+      - name: Sleep for 10 seconds
+        run: sleep 10s
         shell: bash
 
       - name: Run Node Script
@@ -66,7 +66,7 @@ jobs:
           npm i
           npm run start
 
-      - name: Slack Notification
+      - name: Slack Notification - Deployment Completed
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_COLOR: ${{ job.status }}
