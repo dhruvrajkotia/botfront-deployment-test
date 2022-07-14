@@ -72,7 +72,7 @@ var config = {
   },
   data : data
 };
-
+console.log(path.join(__dirname, 'files', 'endpoints.yml'));
 axios(config)
 .then(function (response) {
   console.log(JSON.stringify(response.data));
