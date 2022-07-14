@@ -65,15 +65,13 @@ data.append(`${++ fileCount}`, fs.createReadStream(path.join(__dirname, 'files',
 
 var config = {
   method: 'post',
-  url: `${process.env.SERVER_ENDPOINT}:8888/graphql`,
+  url: `http://34.237.55.114:8888/graphql`,
   headers: {
     'authorization': `${process.env.AUTHENTICATION_TOKEN}`, 
-    'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryaetTKSDfdFlHHxmp'
+    'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarys85LaZXm6njo5KKn'
   },
   data : data
 };
-
-console.log(process.env.SERVER_ENDPOINT);
 
 axios(config)
 .then(function (response) {
