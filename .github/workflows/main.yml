@@ -58,6 +58,7 @@ jobs:
 
       - name: Run Node Script
         run: |
+          cd ${{ secrets.BOTFRONT_PROJECT_LOCATION }}
           npm i
           npm run start
 
